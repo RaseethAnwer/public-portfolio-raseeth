@@ -30,7 +30,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, setCurrentSecti
   const handleResumeDownload = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/Raseeth_Resume.pdf'; // This would be placed in the public folder
+    link.href = 'Raseeth_Resume.pdf'; // This would be placed in the public folder
     link.download = 'Raseeth_Resume.pdf';
     link.click();
   };
@@ -56,16 +56,15 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, setCurrentSecti
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                    currentSection === item.id
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${currentSection === item.id
                       ? 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300'
                       : 'text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-gray-800'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
               ))}
-              
+
               {/* Resume Button */}
               <button
                 onClick={handleResumeDownload}
@@ -113,16 +112,15 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, setCurrentSecti
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                    currentSection === item.id
+                  className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${currentSection === item.id
                       ? 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300'
                       : 'text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-gray-800'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
               ))}
-              
+
               <button
                 onClick={handleResumeDownload}
                 className="w-full flex items-center px-3 py-2 border border-green-600 dark:border-green-400 text-base font-medium rounded-md text-green-600 dark:text-green-400 bg-transparent hover:bg-green-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-gray-900 transition-all duration-200 mt-4"
