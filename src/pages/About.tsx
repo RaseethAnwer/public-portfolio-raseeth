@@ -72,7 +72,7 @@ const About: React.FC = () => {
               <div className="relative h-full w-full rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:-translate-y-2 z-10 bg-gray-900 border border-white/10">
                 <div className="absolute inset-0 bg-blue-500/10 mix-blend-overlay z-20 group-hover:bg-transparent transition-colors duration-500"></div>
                 <img
-                  src="/boat-pic.png"
+                  src="boat-pic.png"
                   alt="Raseeth Anwar"
                   className="w-full h-full object-cover object-center transform transition duration-700 group-hover:scale-110"
                 />

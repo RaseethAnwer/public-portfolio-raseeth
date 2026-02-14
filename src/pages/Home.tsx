@@ -80,7 +80,7 @@ const Home: React.FC = () => {
                 <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl group-hover:border-green-500/50 transition-colors duration-500">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
-                    src="/profile-pic.jpeg"
+                    src="profile-pic.jpeg"
                     alt="Raseeth Anwar"
                     className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-700"
                   />
