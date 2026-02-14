@@ -1,6 +1,7 @@
 {
   "name": "portfolio-raseeth",
   "private": true,
+  "homepage": "https://raseethanwer.github.io/public-portfolio-raseeth/",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
